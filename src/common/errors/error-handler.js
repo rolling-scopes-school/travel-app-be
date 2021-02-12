@@ -1,8 +1,7 @@
 const { InternalServerError, MongoDuplicateError } = require('./errors-list');
+const logger = require('../logging/logger');
 
 module.exports = (err, path) => {
-  console.log(err);
-
   // Handle mongoose duplicate errors
   if (err.code === 11000) {
     err = new MongoDuplicateError(
@@ -11,6 +10,7 @@ module.exports = (err, path) => {
   }
 
   if (!err.reason) {
+    logger.error(err.message, err.stack);
     err = new InternalServerError();
   }
 

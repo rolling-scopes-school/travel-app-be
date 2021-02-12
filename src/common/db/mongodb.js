@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { MONGO_CONNECTION_STRING } = require('../config');
+const logger = require('../logging/logger');
 
 const connectToDB = () => {
   mongoose
@@ -8,11 +9,11 @@ const connectToDB = () => {
       useUnifiedTopology: true,
       useCreateIndex: true,
     })
-    .catch((err) => console.log(err));
+    .catch((err) => logger.error(err.message));
 
   const db = mongoose.connection;
   db.once('open', () => {
-    console.log('Mongo connection successfully!');
+    logger.info('Mongo connection successfully!');
   });
 };
 

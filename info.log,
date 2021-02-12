@@ -1,0 +1,5 @@
+{
+  message: 'Mongo connection successfully!',
+  level: 'info',
+  timestamp: '2021-02-12T17:37:50.358Z'
+}

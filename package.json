@@ -30,7 +30,9 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-status-codes": "^2.1.4",
-    "mongoose": "^5.11.15"
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
   },
   "engines": {
     "node": ">=12"

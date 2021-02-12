@@ -8,16 +8,10 @@ app.listen(port, () =>
   console.log(`server listening at http://localhost:${port}`)
 );
 
-process.on('uncaughtException', (error) => {
-  console.log(error);
-  const exit = process.exit;
-  exit(1);
-});
-
-process.on('unhandledRejection', (reason, origin) => {
-  console.log(
-    `unhandledRejection: ${reason}, origin: ${JSON.stringify(origin)}}`
-  );
-});
+// process.on('unhandledRejection', (reason, origin) => {
+//   logger.error(
+//     `unhandledRejection: ${reason}, origin: ${JSON.stringify(origin)}}`
+//   );
+// });
 
 connectToDB();
