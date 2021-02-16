@@ -20,7 +20,7 @@ const infoTransports = [
   }),
   new transports.File({
     level: 'info',
-    filename: 'info.log,',
+    filename: 'info.log',
     format: combine(timestamp(), json(), prettyPrint()),
   }),
 ];
