@@ -11,7 +11,7 @@ const placeSchema = new Schema({
     type: Schema.Types.ObjectId,
     require: true,
   },
-  photoUrl: {
+  imageUrl: {
     type: String,
     require: true,
   },
