@@ -1,9 +1,7 @@
 const morgan = require('morgan');
 const logger = require('../common/logging/logger');
 
-morgan.token('requestId', (request) => request.id);
-
-const format = process.env.NODE_ENV === 'production' ? 'combined' : 'dev';
+const format = process.env.NODE_ENV === 'production' ? 'short' : 'dev';
 const options = {
   stream: {
     write: (message) => logger.info(message.trim()),
