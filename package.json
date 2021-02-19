@@ -34,7 +34,9 @@
     "http-status-codes": "^2.1.4",
     "mongoose": "^5.11.15",
     "morgan": "^1.10.0",
-    "winston": "^3.3.3"
+    "swagger-ui-express": "^4.1.6",
+    "winston": "^3.3.3",
+    "yamljs": "^0.3.0"
   },
   "engines": {
     "node": ">=12"
