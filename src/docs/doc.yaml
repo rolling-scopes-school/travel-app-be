@@ -76,6 +76,11 @@ paths:
                                       type: string
                                     description:
                                       type: string
+        '404':
+          description: country not found
+        '400':
+          description: 'invalid Country ID. ID must be objectID'
+          
 components:
   schemas:
     Country:
