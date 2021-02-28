@@ -2,6 +2,14 @@
 
 Demo API for "travel-app" task.
 
+## Деплой
+ - [Деплой на хероку](https://travel-app-demo.herokuapp.com)  
+ - Доступные эндпойнты:
+    - ```/countries``` - список стран
+    - ```/countries/{id}``` - детали о стране
+    - ```/docs``` - swagger документация
+ 
+
 ## Локальный запуск
 
 1. ```git clone https://github.com/rolling-scopes-school/travel-app-be.git```
