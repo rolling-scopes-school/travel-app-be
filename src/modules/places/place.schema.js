@@ -2,6 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const placeLocaleSchema = new Schema({
   _id: false,
+  lang: {
+    type: String,
+    required: true,
+  },
   name: String,
   description: String,
 });
