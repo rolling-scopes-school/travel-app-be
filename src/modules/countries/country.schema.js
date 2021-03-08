@@ -2,6 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const localeSchema = new Schema({
   _id: false,
+  lang: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
